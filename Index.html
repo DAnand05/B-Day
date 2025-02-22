@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Love</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #ffe3e3;
+      color: #4a2c2a;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 3rem;
+      color: #d75a4a;
+      margin-top: 1rem;
+    }
+
+    #birthday-message {
+      font-size: 1.5rem;
+      margin: 1.5rem auto;
+      max-width: 600px;
+      line-height: 1.8;
+    }
+
+    .memory-wall {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin: 2rem auto;
+      max-width: 900px;
+    }
+
+    .memory-card {
+      background-color: #ffe3e3;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+      overflow: hidden;
+      transition: transform 0.3s ease-in-out;
+      position: relative;
+    }
+
+    /* Zoom-in on hover */
+    .memory-card:hover {
+      transform: scale(1.05);
+    }
+
+    /* Fade-in animation when the page loads */
+    .memory-card img {
+      width: 100%;
+      height: auto;
+      opacity: 0;
+      animation: fadeIn 1s ease-in-out forwards;
+    }
+
+    /* Slide-up effect */
+    .memory-card:hover img {
+      transform: translateY(-5px);
+    }
+
+    /* Rotate effect */
+    .memory-card:hover {
+      transform: rotate(3deg);
+    }
+
+    /* Keyframes for fade-in effect */
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: scale(0.9);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    .memory-text {
+      padding: 1rem;
+      font-size: 1rem;
+      background-color: #ffb0b0;
+    }
+
+    .heart-animation {
+      font-size: 2rem;
+      color: red;
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.2);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    footer {
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #6d4c4c;
+    }
+  </style>
+</head>
+<body>
+  <h1>Happy Birthday, My Love!</h1>
+  <p id="birthday-message">
+    On this Special Day, I just want to thank you for coming into my life. Aap
+    bhot special ho mere liye shomuuuu jiiii. I love you bchchiii jiiii bhottt
+    saraaaa. Aap mutki bhainffff ho meriii. Aap jese smile krte ho, jese act
+    krte ho mere around, mujhe bhot acha lgta h, thanks for being born and
+    coming in my life. You are very special to me. ❤
+  </p>
+
+  <div class="memory-wall">
+    <div class="memory-card">
+      <img src="Images/Image_001.jpg" alt="Us Together">
+      <div class="memory-text">Aaapke shaath m bhot khush rehta hu bchchiiii jiiiii ❤</div>
+    </div>
+    <div class="memory-card">
+      <img src="Images/Image_002.jpg" alt="Beautiful you">
+      <div class="memory-text">Shoooo beautifulll you look while smiling!</div>
+    </div>
+    <div class="memory-card">
+      <img src="Images/Image_003.jpg" alt="Group pic">
+      <div class="memory-text">I felt something uss din bhiii</div>
+    </div>
+    <div class="memory-card">
+      <img src="Images/Image_004.jpg" alt="Cafe k paas">
+      <div class="memory-text">Uss din ki ik lauti pic jisme sirf hum dono the.</div>
+    </div>
+    <div class="memory-card">
+      <img src="Images/Image_005.jpg" alt="🤭">
+      <div class="memory-text">Shundarrr shundarrrrrrr bchchiiiiii</div>
+    </div>
+    <div class="memory-card">
+      <img src="Images/Image_006.jpg" alt="😍">
+      <div class="memory-text">Beautiful and Graceful bchchiiiiii</div>
+    </div>
+    <div class="memory-card">
+      <img src="Images/Image_008.jpg" alt="🥰">
+      <div class="memory-text">Last Dharohar Saath m</div>
+    </div>
+    <div class="memory-card">
+      <img src="Images/Image_009.jpg" alt="🍿🍿">
+      <div class="memory-text">Animullll with bchchiiiiii</div>
+    </div>
+    <div class="memory-card">
+      <img src="Images/Image_010.jpg" alt="😋">
+      <div class="memory-text">Nom nom bchchiiiiii</div>
+    </div>
+    <div class="memory-card">
+      <img src="Images/Image_011.jpg" alt="Class m Hum dono">
+      <div class="memory-text">Class se pehle bchchii k saath</div>
+    </div>
+    <div class="memory-card">
+      <img src="Images/Image_014.jpg" alt="🤭">
+      <div class="memory-text">Bchchiii ka gusshaa</div>
+    </div>
+    <div class="memory-card">
+      <img src="Images/Image_013.jpg" alt="👦🏾">
+      <div class="memory-text">Shundarrr bchchiii in shomuuu shirt</div>
+    </div>
+  </div>
+
+  <footer>
+    Made with ❤ by Deep Anand for the most special person.
+  </footer>
+
+  <script>
+    // Optional JavaScript Heart Animation
+    const birthdayMessage = document.getElementById("birthday-message");
+    birthdayMessage.innerHTML += '<div class="heart-animation">❤</div>';
+  </script>
+</body>
+</html>
